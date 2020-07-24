@@ -1,8 +1,6 @@
 # django-blog
 a blog created for posting your ideas on social media...
-# Step 1) Clone repository
-git clone https://github.com/xushvai/io.git  
-# Step 2) Environmental preparations
+# Step 1) Environmental preparations
 The environment should be 'Python2.7(devel) + Django1.7.1 + MySQL'.
 
 Install Python development version :
@@ -26,7 +24,7 @@ If the 'pip' is not installed in your environment, follow the steps below to com
 
 curl https://bootstrap.pypa.io/ez_setup.py -o - | python  
 easy_install pip  
-# Step 3) Config Database
+# Step 2) Config Database
 Edit xblog/settings_dev.py to config database info.
 
 Example :
@@ -43,14 +41,14 @@ Finally, make models into your database schema :
 
 python manage.py makemigrations  
 python manage.py migrate  
-# Step 4) Run !
+# Step 3) Run !
 python manage.py runserver 0.0.0.0:8080  
 or nonhup
 
 nohup python manage.py runserver 0.0.0.0:8080&
 Now you can try http://127.0.0.1:8080 .
 
-# Step 5) Publish your first blog post
+# Step 4) Publish your first blog post
 Create an admin account for first start :
 
 python manage.py createsuperuser  
